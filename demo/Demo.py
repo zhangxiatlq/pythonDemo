@@ -59,17 +59,27 @@ def sort():
     print(arays);
 
 
+#菲波那切数列
+def fab(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        print(b)
+        a, b = b, a + b
+        n = n + 1
+
 
 if __name__=="__main__":
-    print("main")
-    foo2('yuhui' ,30)
-    foo1(6)
-    foo()
-    linkMethod(listA,tinylist)
-    subListMethod(listA,2,4)
+    # print("main")
+    # foo2('yuhui' ,30)
+    # foo1(6)
+    # foo()
+    # linkMethod(listA,tinylist)
+    # subListMethod(listA,2,4)
+    # print("--------------------------")
+    # test()
+    # print("--------------------------")
+    # mulTable()
+    # print("--------------------------")
+    # sort()
     print("--------------------------")
-    test()
-    print("--------------------------")
-    mulTable()
-    print("--------------------------")
-    sort()
+    fab(100)

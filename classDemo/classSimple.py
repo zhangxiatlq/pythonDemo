@@ -22,6 +22,7 @@ if __name__ == "__main__":
     emp2 = Employee("xiaoqiang",30)
     print(emp1.displayEmplyee())
     print(emp2.displayEmplyee())
+    emp1.prt()
     t = Employee;
     t.__init__(t,"xiaozhang",20)
     print(t.displayEmplyee(t))
