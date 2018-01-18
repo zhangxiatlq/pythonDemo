@@ -67,6 +67,16 @@ def fab(max):
         a, b = b, a + b
         n = n + 1
 
+#range方式获取list的范围值
+def get_content_list_range(list_a,num):
+    r = []
+    for i in range(num):
+        r.append(listA[i])
+    return r;
+#切片 方式获取list的范围值
+def get_content_list(list,numstar,numend):
+    #若numstar为0时，list[:numend]  等同于 list[numstar,numend]
+    return list[numstar:numend]
 
 if __name__=="__main__":
     # print("main")
@@ -82,4 +92,10 @@ if __name__=="__main__":
     # print("--------------------------")
     # sort()
     print("--------------------------")
-    fab(100)
+    # fab(100)
+    li = ["zhang","liu","xiao","aa"]
+    print(get_content_list_range(li,2))
+
+    lis = list(range(10)) #获取数组值
+    print(get_content_list(lis,5,8))
+
