@@ -18,11 +18,13 @@ class Employee:
         print(self.__class__)
 
 if __name__ == "__main__":
+    #构造方法创建对象
     emp1 = Employee("xiaoming",25)
     emp2 = Employee("xiaoqiang",30)
     print(emp1.displayEmplyee())
     print(emp2.displayEmplyee())
     emp1.prt()
+    #直接定义对象，然后调用初始化方法
     t = Employee;
     t.__init__(t,"xiaozhang",20)
     print(t.displayEmplyee(t))
